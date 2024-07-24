@@ -5,6 +5,7 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
+    # hostname: pihole  # 'set your desired hostname or it will default to the Docker container ID'
     # For DHCP it is recommended to remove these ports and instead add: network_mode: "host"
     ports:
       - "53:53/tcp"
